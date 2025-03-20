@@ -20,7 +20,8 @@ export default async function Home() {
                     className="hero min-h-225"
                     style={{
                         backgroundImage: "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
-                    }}>
+                    }}
+                    data-theme="light">
                     <div className="hero-overlay"></div>
                     <div className="hero-content text-neutral-content text-center">
                         <div className="">

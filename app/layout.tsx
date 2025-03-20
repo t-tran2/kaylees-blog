@@ -23,11 +23,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="valentine">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="navbar bg-primary shadow-sm">
+        <div className="navbar bg-base-100 shadow-sm">
           <div className="flex-1">
             <a className="btn btn-ghost text-xl">Kaylee's Blog</a>
           </div>
