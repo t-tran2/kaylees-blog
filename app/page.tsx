@@ -20,7 +20,7 @@ export default async function Home() {
                 <div
                     className="hero min-h-200"
                     style={{
-                        backgroundImage: "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
+                        backgroundImage: "url(/tulips.jpg)",
                     }}
                     data-theme="light">
                     <div className="hero-overlay"></div>
@@ -28,7 +28,7 @@ export default async function Home() {
                         <div className="">
                             <h1 className="mb-5 text-5xl font-bold">Hello, my name is Kaylee!</h1>
                             <p className="mb-5 text-2xl">
-                                Swag city, Y&#39;all
+                                Thank you for visiting my blog. I hope you enjoy what I have to share!
                             </p>
                         </div>
                     </div>
