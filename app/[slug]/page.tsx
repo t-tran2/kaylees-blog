@@ -15,8 +15,8 @@ const urlFor = (source: SanityImageSource) =>
 const options = { next: { revalidate: 30 } };
 
 export default async function PostPage({
-                                           params,
-                                       }: {
+    params,
+}: {
     params: Promise<{ slug: string }>;
 }) {
     const post = await client.fetch<SanityDocument>(POST_QUERY, await params, options);
@@ -39,7 +39,7 @@ export default async function PostPage({
                 />
             )}
             <h1 className="text-4xl font-bold mb-8">{post.title}</h1>
-            <div className="prose">
+            <div className="prose prose-lg lg:prose-xl">
                 <p>Published: {new Date(post.publishedAt).toLocaleDateString()}</p>
                 {Array.isArray(post.body) && <PortableText value={post.body} />}
             </div>

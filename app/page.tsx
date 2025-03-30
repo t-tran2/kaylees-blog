@@ -2,6 +2,7 @@ import { type SanityDocument } from "next-sanity";
 
 import { client } from "@/sanity/client";
 import PostsTimeline from "./components/posts-timeline";
+import PostsCarousel from "./components/posts-carousel";
 
 const POSTS_QUERY = `*[
   _type == "post"
@@ -17,7 +18,7 @@ export default async function Home() {
         <div>
             <main className="flex flex-col  row-start-2 items-center">
                 <div
-                    className="hero min-h-225"
+                    className="hero min-h-200"
                     style={{
                         backgroundImage: "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
                     }}
@@ -32,7 +33,8 @@ export default async function Home() {
                         </div>
                     </div>
                 </div>
-                <PostsTimeline posts={posts} />
+                <h1 className="text-4xl font-bold mb-3 mt-3 text-center">Posts</h1>
+                <PostsCarousel posts={posts} />
             </main>
             <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
             </footer>
